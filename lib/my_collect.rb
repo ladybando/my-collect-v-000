@@ -3,13 +3,9 @@ def my_collect(array)
   i = 0
   collection = []
   while i < array.length
-    collection << yield(array[i]).upcase
+    collection << yield(array[i])
     i += 1
   end
     #binding.pry
-    while i < array.length
-      collection << yield(array[i]).split(" ").first
-      i += 1
-  end
   collection
 end
