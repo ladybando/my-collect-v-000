@@ -4,6 +4,7 @@ def my_collect(language)
   collection = []
   while i < language.length
     collection << yield(collection[i]).uppercase
+    binding.pry
     i += 1
   end
   collection
