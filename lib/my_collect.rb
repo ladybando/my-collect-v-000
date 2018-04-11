@@ -1,8 +1,8 @@
 require 'pry'
-def my_collect(language)
+def my_collect(languages)
   i = 0
   collection = []
-  while i < language.length
+  while i < languages.length
     collection << yield(collection[i]).uppercase
     i += 1
   end
