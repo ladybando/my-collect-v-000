@@ -7,7 +7,7 @@ def my_collect(array)
     i += 1
     #binding.pry
     while i < array.length
-      collection << yield(array[i]).split(" ")
+      collection << yield(array[i]).split(" ").first
   end
   collection
 end
