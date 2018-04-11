@@ -9,6 +9,7 @@ def my_collect(array)
     #binding.pry
     while i < array.length
       collection << yield(array[i]).split(" ").first
+      i += 1
   end
   collection
 end
