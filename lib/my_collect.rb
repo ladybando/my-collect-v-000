@@ -5,6 +5,7 @@ def my_collect(array)
   while i < array.length
     collection << yield(array[i]).upcase
     i += 1
+  end
     #binding.pry
     while i < array.length
       collection << yield(array[i]).split(" ").first
