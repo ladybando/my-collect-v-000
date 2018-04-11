@@ -5,4 +5,5 @@ def my_collect(language)
     collection << yield(collection[i]).uppercase
     i += 1
   end
+  collection
 end
