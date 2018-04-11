@@ -5,7 +5,7 @@ def my_collect(array)
   while i < array.length
     collection << yield(array[i]).upcase
     i += 1
-    binding.pry
+    #binding.pry
   end
   collection
 end
