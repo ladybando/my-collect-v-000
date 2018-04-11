@@ -4,8 +4,8 @@ def my_collect(languages)
   collection = []
   while i < languages.length
     collection << yield(languages[i]).upcase
-    binding.pry
     i += 1
+    binding.pry
   end
   collection
 end
