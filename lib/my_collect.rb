@@ -3,7 +3,7 @@ def my_collect(languages)
   i = 0
   collection = []
   while i < languages.length
-    collection << yield(collection[i]).uppercase
+    collection << yield(languages[i]).uppercase
     binding.pry
     i += 1
   end
